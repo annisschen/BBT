@@ -55,6 +55,10 @@
 						  clearable>
 				</el-input>
 			</div>
+			<el-row>
+				<el-button type="warning" round id="submit-button" disabled="">提交</el-button>
+				<el-button type="warning" round id="submit-button">提交</el-button>
+			</el-row>
 		</el-main>
 
 	</el-container>
@@ -120,17 +124,24 @@
 		border-bottom-style: solid;
 		margin: 0 auto;
 	}
+	.sub-main{
+		margin: 0 auto;
+	}
 	.inputBox{
 		height: 50px;
 		width: 400px;
 	}
 	.inputElements{
 		float: bottom;
+		line-height:50px;
 	}
 	.inputElements h4{
 		float: left;
 		height: 50px;
 		width: 100px;
+		display:inline-block
 	}
-
+	#submit-button{
+		float: right;
+	}
 </style>

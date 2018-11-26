@@ -50,9 +50,10 @@
 				<h4>申请类型 ： </h4>
 				<el-input class ="textarea"
 						  type="textarea"
-						  :autosize="{ minRows: 2, maxRows: 4}"
-						  placeholder="请输入内容"
-						  v-model="textarea1">
+						  rows="2"
+						  placeholder="请输入文字要求"
+						  v-model="textarea1"
+						  resize="none">
 				</el-input>
 			</div>
 
@@ -65,6 +66,10 @@
 								placeholder="选择日期时间">
 				</el-date-picker>
 			</div>
+			<el-row>
+				<el-button type="warning" round id="submit-button" disabled="">提交</el-button>
+				<el-button type="warning" round id="submit-button">提交</el-button>
+			</el-row>
 		</el-main>
 
 	</el-container>
@@ -129,33 +134,34 @@
 
 
 <style scoped lang="scss">
-
 	.sub-header{
 		border: coral;
 		border-bottom-style: solid;
 		margin: 0 auto;
+	}
+	.sub-main{
+		margin: 0 auto;
+	}
+	.textarea{
+		margin-top: 10px;
+		height: 60px;
+		width: 400px;
 	}
 	.inputBox{
 		height: 50px;
 		width: 400px;
 	}
 	.inputElements{
-		clear: both;
+		float: bottom;
+		line-height:50px;
 	}
 	.inputElements h4{
 		float: left;
 		height: 50px;
 		width: 100px;
+		display:inline-block
 	}
-	.inputElements .inputBox{
-		float: left;
+	#submit-button{
+		float: right;
 	}
-
-	.textarea{
-		height: 100px;
-		width: 400px;
-	}
-
-
-
 </style>
