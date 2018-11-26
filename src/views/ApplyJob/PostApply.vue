@@ -47,11 +47,11 @@
 			</el-input>
 			</div>
 			<div class = 'inputElements'>
-				<h4>文字要求： </h4>
+				<h4>海报要求： </h4>
 				<el-input class ="textarea"
 						  type="textarea"
 						  rows="2"
-						  placeholder="请输入文字要求"
+						  placeholder="A0/A2/横幅/A4邀请函（彩色/黑白）……"
 						  v-model="textarea1"
 						  resize="none">
 				</el-input>
